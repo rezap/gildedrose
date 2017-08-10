@@ -7,14 +7,14 @@ import org.junit.Test;
 public class GildedRoseTest {
 
     @Test
-    public void foo() {
+    public void testStupidInstOne() {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals("foo", app.items[0].name);
     }
     @Test
-    public void foo2() {
+    public void testStupidInstTwo() {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", 10, 20) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
