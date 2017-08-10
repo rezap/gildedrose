@@ -12,4 +12,7 @@ node {
 	stage('Publish'){
 	junit '**/target/surefire-reports/TEST-*.xml'
 	}
+	stage('Documentation'){
+	mvn site
+	}
 }
